@@ -1,7 +1,12 @@
 .leftSection_container {
-    width: 19%;
+    width: 17%;
     font-family: "Roboto Condensed", sans-serif;
     /* border: 2px solid black; */
+}
+@media screen and (max-width: 1024px){
+    .leftSection_container {
+        display: none;
+    }
 }
 
 .racing_sports {

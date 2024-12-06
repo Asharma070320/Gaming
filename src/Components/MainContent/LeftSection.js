@@ -44,9 +44,9 @@ const LeftSection = () => {
     
     const[racingSports,setRacingSports] = useState(true);
   const [expandedSections, setExpandedSections] = useState({
-    RacingSports: false,
-    Others: false,
-    AllSports: false,
+    RacingSports: true,
+    Others: true,
+    AllSports: true,
     Football: false, // Football section will be inside AllSports
   });
 
