@@ -25,10 +25,12 @@
 }
 
 .bet {
-    width: 30%;
+    width: 33%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    gap: 3.5rem;
+    justify-content: space-evenly;
+    /* border: 2px solid; */
 }
 
 .games_descriptions {
