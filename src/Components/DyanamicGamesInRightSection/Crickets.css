@@ -48,6 +48,9 @@
     border-top: 0px solid rgb(199, 200, 202);
     border-bottom: 0.2px solid rgb(199, 200, 202);
 }
+.data_names span{
+    padding: 0px 5px;
+}
 
 .set_names_icons {
     width: 70%;
@@ -160,6 +163,7 @@
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .games_img img {
@@ -170,7 +174,7 @@
 
 .games_img p {
     position: absolute;
-    top: 80%;
+    top:79%;
    width: 100%;
     font-size: 0.7rem;
     padding: 4px 0;
