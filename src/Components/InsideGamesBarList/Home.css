@@ -116,3 +116,67 @@
   .boxes li:last-child {
     border-right: none;
   }
+
+@media screen and (max-width: 1024px){
+    .home_container{
+        width: 100%;
+        font-family: "Roboto Condensed", sans-serif;
+        /* border: 2px solid red; */
+    }
+    .highlights_box {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 0.3rem;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scroll-behavior: smooth; /* Smooth scrolling */
+        /* padding: 0.5rem 0;  */
+        -ms-overflow-style: none; 
+        scrollbar-width: none; 
+    }
+
+    .highlights_box::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, and Edge */
+    }
+
+    .highlight_box {
+        flex-shrink: 0; /* Prevent shrinking */
+        width: auto; /* Adjust width automatically based on content */
+        min-width: 350px; /* Set a minimum width */
+        padding: 6px 0px;
+        text-align: center;
+        background-color: rgb(185, 114, 66);
+        /* border: 2px solid palevioletred; */
+    }
+
+    .highlight_box a {
+        text-align: center;
+        font-size: 0.8rem;
+        color: white;
+        text-decoration: none;
+    }
+    .game_bar{
+        width: 100%;
+        margin-top: 0.1rem;
+        /* border: 2px solid black; */
+    }
+    .boxes li {
+        flex-shrink: 0;
+        width: 80px;
+        text-align: center;
+        padding: 10px 0px;
+        border-right: 0.1px solid rgb(91, 85, 85);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: rgb(185,114,66); /* Default background color */
+        cursor: pointer; /* Change cursor on hover */
+        transition: background-color 0.3s ease; /* Smooth transition for color */
+        font-size: 0.7rem;
+      }
+      .boxes li.selected {
+        background-color: rgb(65,128,155); /* Background color for selected item */
+        color: white; /* Optional: Change text color */
+      }
+}

@@ -2,7 +2,6 @@
     width: 100%;
     color: white;
     background-color: rgb(185,114,66);
-   
 }
 .listsOfGames{
     display: flex;
@@ -44,6 +43,9 @@
 }
 
 @media screen and (max-width:1024px){
+    .gamesList_container{
+        display: none;
+    }
     .listsOfGames{
         font-size: 0.8rem;
         gap: 1.2rem;

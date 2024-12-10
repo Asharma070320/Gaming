@@ -145,6 +145,7 @@
 .showAll_games {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     /* justify-content:space-evenly; */
@@ -153,7 +154,7 @@
     text-align: center;
     padding: 0px 5px;
     /* background-color: aqua; */
-    /* border: 2px solid; */
+    border: 2px solid;
 }
 
 .games_img {
@@ -183,4 +184,15 @@
     color: white;
     border-radius: 5px;
     background-color: rgb(176,80,14);  
+}
+
+@media screen and (max-width: 768px){
+    .games_img img {
+        width: 80px;
+        height: 80px;  /* 70% of the container height */
+        object-fit: contain;  
+    }
+    .showAll_games {
+        justify-content: space-around;
+    }
 }
