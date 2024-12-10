@@ -151,9 +151,9 @@
         max-width: 150px;
         display: inline-block;
     }
-    .dropdown_menu {
+    /* .dropdown_menu {
         top: 10%;
-      }
+      } */
       .dropdown_menu li {
         font-size: 0.9rem;
         font-weight: 500;
@@ -181,10 +181,10 @@
     .demo{
         font-size: 1rem;
     }
-    .dropdown_menu {
+    /* .dropdown_menu {
         top: 11%;
         width: 150px;
-      }
+      } */
   }
   @media screen and (max-width: 430px){
     .nav_rightSection{
