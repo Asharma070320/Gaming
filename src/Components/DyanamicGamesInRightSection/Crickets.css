@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid red;
 }
 
 .bet {
@@ -141,6 +142,9 @@
         width: 100%;  /* Make place_bet take full width and appear below icons */
         margin-top: 10px;  /* Add some space between icons and place_bet */
     }
+    .top_names {
+       display: none;
+    }
 }
 .showAll_games {
     width: 100%;
@@ -187,6 +191,10 @@
 }
 
 @media screen and (max-width: 768px){
+    .data_names span{
+        font-size: 0.6rem;
+        padding: 0px 5px;
+    }
     .games_img img {
         width: 80px;
         height: 80px;  /* 70% of the container height */
