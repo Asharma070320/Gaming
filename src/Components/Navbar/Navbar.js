@@ -4,6 +4,8 @@ import logo from "./logo.png";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isBalanceVisible, setIsBalanceVisible] = useState(true); // State to toggle balance visibility
+  const [isExpoVisible, setIsExpoVisible] = useState(true);
   const dropdownRef = useRef(null);
 
   const toggleDropdown = () => {
@@ -26,6 +28,13 @@ const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
+  const handleBalanceToggle = () => {
+    setIsBalanceVisible((prev) => !prev);
+  };
+  const handleExpoToggle = () => {
+    setIsExpoVisible((prev) => !prev);
+  };
 
   return (
     <div className="navbar_container">
@@ -52,9 +61,14 @@ const Navbar = () => {
         </div>
         <p className="rules">Rules</p>
         <div className="balance_Exp">
-          <p className="balance">
-            Balance:1500 <br /> Exp:0
-          </p>
+          {isBalanceVisible && (
+            <p className="balance">
+              Balance:1500 
+            </p>
+          )}
+          {isExpoVisible && (
+            <p className="balance">Exp:0</p>
+          )}
         </div>
         <div className="demo_icon" onClick={toggleDropdown} ref={dropdownRef}>
           <p className="demo">
@@ -75,6 +89,18 @@ const Navbar = () => {
                 <li>Current Bet</li>
                 <li>Casino Results</li>
                 <li>Set Button Values</li>
+                <li className="hide_screen">Rules</li>
+                <li className="hide_screen">
+                  Balance{" "}
+                  <input
+                    className="balance_inp"
+                    type="checkbox"
+                    onChange={handleBalanceToggle}
+                  />
+                </li>
+                <li className="hide_screen">
+                  Exposure <input onChange={handleExpoToggle} type="checkbox" className="exposure_inp" />
+                </li>
                 <hr />
                 <li>Sign Out</li>
               </ul>

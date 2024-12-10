@@ -111,6 +111,15 @@
     padding: 10px 15px;
     cursor: pointer;
   }
+  .hide_screen{
+    display: none;
+  }
+  .hide_screen .balance_inp{
+    margin-left: 4rem;
+  }
+  .hide_screen .exposure_inp{
+    margin-left: 3.4rem;
+  }
   
   .dropdown_menu li:hover {
     text-decoration: underline;
@@ -121,6 +130,12 @@
   @media screen and (max-width: 1125px){
     .nav_rightSection{
         width: 45%;
+    }
+    .hide_screen{
+      display: block;
+    }
+    .rules{
+      display: none;
     }
   }
   @media screen and (max-width: 1020px){
