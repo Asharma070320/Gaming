@@ -39,7 +39,16 @@ const App = () => {
             />
           }
         />
+      <Route
+          path="/terms-and-conditions"
+          element={<TermsAndConditions />}
+        />
+        <Route
+          path="/responsible-gaming"
+          element={<ResponsibleGaming />}
+        />
       </Routes>
+      
     </Router>
   );
 };
@@ -54,6 +63,7 @@ const MainLayout = ({ onGameChange, onLeftItemClick, selectedGame, selectedLeftI
         selectedLeftItem={selectedLeftItem}
         onLeftItemClick={onLeftItemClick}
       />
+      
       <Footer />
     </>
   );
