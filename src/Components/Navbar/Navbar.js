@@ -1,12 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
 import logo from "./logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isBalanceVisible, setIsBalanceVisible] = useState(true); // State to toggle balance visibility
   const [isExpoVisible, setIsExpoVisible] = useState(true);
   const dropdownRef = useRef(null);
+
+  const navi = useNavigate();
 
   const toggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
@@ -35,6 +38,12 @@ const Navbar = () => {
   const handleExpoToggle = () => {
     setIsExpoVisible((prev) => !prev);
   };
+
+  const signOutBtn = () => {
+    setTimeout(()=>{
+      navi('/')
+    },1000)
+  }
 
   return (
     <div className="navbar_container">
@@ -102,7 +111,7 @@ const Navbar = () => {
                   Exposure <input onChange={handleExpoToggle} type="checkbox" className="exposure_inp" />
                 </li>
                 <hr />
-                <li>Sign Out</li>
+                <li onClick={signOutBtn}>Sign Out</li>
               </ul>
             </div>
           )}

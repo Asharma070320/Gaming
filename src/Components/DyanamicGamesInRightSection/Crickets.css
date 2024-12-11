@@ -211,9 +211,40 @@
         margin-top: 0.5rem;
         text-align: center;
         padding: 0px 0px;
+        /* border: 2px solid red; */
     }
     .games_img {
         width: 100px;
+        display: flex;
+        flex-direction: column;  /* Stack name and image vertically */
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        position: relative;
+        border: 1px solid rgb(0, 0, 0);
+    }
+}
+@media screen and (max-width: 425px){
+    .games_img img {
+        width: 80px;
+        height: 80px;  /* 70% of the container height */
+        object-fit: contain;  
+    }
+    .showAll_games {
+        width: 100%;
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap; */
+        /* justify-content:space-evenly; */
+        gap: 0rem;
+        margin-top: 0.5rem;
+        text-align: center;
+        padding: 0px 0px;
+        /* border: 2px solid red; */
+    }
+    .games_img {
+        width: 90px;
         display: flex;
         flex-direction: column;  /* Stack name and image vertically */
         align-items: center;
