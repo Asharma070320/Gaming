@@ -48,7 +48,6 @@ const App = () => {
           element={<ResponsibleGaming />}
         />
       </Routes>
-        <Footer />
       
     </Router>
   );
