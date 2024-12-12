@@ -2,9 +2,9 @@ import React from 'react'
 
 const ResponsibleGaming = () => {
   return (
-    <div className="responsibleGaming_container">
+    <div style={{padding:'90px 50px 0px 50px'}} className="responsibleGaming_container">
     <div className="responsible_gaming_list">
-      <h4>Responsible Gaming and Player Protection Information Policy</h4>
+      <h3>Responsible Gaming and Player Protection Information Policy</h3>
       <p>
         Website is committed to endorsing responsible wagering as well as
         promoting the awareness of problem gambling and improving prevention,
@@ -87,9 +87,9 @@ const ResponsibleGaming = () => {
         more likely it is that you are having gambling issues. To speak with
         someone who can give you professional advice and support, please
         contact one of the organisations detailed below: <br />
-        <a href="https://www.gamcare.org.uk" target="_blank">www.gamcare.org.uk</a> <br />
-        <a href="https://www.gamblingtherapy.org" target="_blank">www.gamblingtherapy.org</a> <br />
-        <a href="https://www.gamblersanonymous.org.uk" target="_blank">www.gamblersanonymous.org.uk</a> <br />
+        <a style={{color:'blue'}} href="https://www.gamcare.org.uk" target="_blank">www.gamcare.org.uk</a> <br />
+        <a style={{color:'blue'}} href="https://www.gamblingtherapy.org" target="_blank">www.gamblingtherapy.org</a> <br />
+        <a style={{color:'blue'}} href="https://www.gamblersanonymous.org.uk" target="_blank">www.gamblersanonymous.org.uk</a> <br />
         Underage gambling <br />
         It is illegal for anyone under the age of 18 to open an account or to gamble on website. It takes very serious measures in this direction. We carry out age verification checks on all customers who use payment methods which are available to under 18's. Αdditionally, we randomly perform age verification checks on customers using other payment methods. <br />
       </p>

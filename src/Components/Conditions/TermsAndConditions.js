@@ -2,7 +2,7 @@ import React from 'react'
 
 const TermsAndConditions = () => {
   return (
-    <div className="terms_container">
+    <div style={{padding:'90px 50px 0px 50px'}} className="terms_container">
     <div className="list_of_conditions">
       <h2>Terms and Conditions</h2>
       <h4>1. About</h4>
