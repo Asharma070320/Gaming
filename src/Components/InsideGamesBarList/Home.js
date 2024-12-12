@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { MdSportsCricket } from "react-icons/md";
 import "./Home.css";
 import {
   Politics,
@@ -29,12 +30,13 @@ const Home = () => {
   const listRef = useRef(null);
 
   const hightLightBoxes = [
-    { id: 1, name: "New Zealand v England" },
-    { id: 2, name: "Australia v India" },
-    { id: 3, name: "Brisbane Roar v Melbourne City" },
-    { id: 4, name: "South Africa v Sri Lanka" },
-    { id: 5, name: "Inter v Parma" },
+    { id: 1, name: "New Zealand v England", icon: <MdSportsCricket />},
+    { id: 2, name: "Australia v India", icon:<MdSportsCricket /> },
+    { id: 3, name: "Brisbane Roar v Melbourne City", icon: <MdSportsCricket />},
+    { id: 4, name: "South Africa v Sri Lanka", icon: <MdSportsCricket />},
+    { id: 5, name: "Inter v Parma", icon: <MdSportsCricket />},
   ];
+  
 
   const gameslistBar = [
     "Politics",
@@ -107,14 +109,16 @@ const Home = () => {
     <div className="home_container">
       {/* Highlight Boxes */}
       <div className="highlights_box">
-        {hightLightBoxes.map((boxes, idx) => (
-          <div key={idx} className="highlight_box">
-            <a className="blink_me" href="#">
-              {boxes.name}
-            </a>
-          </div>
-        ))}
-      </div>
+  {hightLightBoxes.map((boxes, idx) => (
+    <div key={idx} className="highlight_box">
+      <a className="blink_me" href="#">
+        <span style={{marginRight:'0.5rem'}}>{boxes.icon}</span> {/* Render the icon dynamically */}
+        <span>{boxes.name}</span> {/* Add span to wrap the text */}
+      </a>
+    </div>
+  ))}
+</div>
+
 
       {/* Games Bar */}
       <div className="game_bar">

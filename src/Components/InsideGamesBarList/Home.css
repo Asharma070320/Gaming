@@ -20,8 +20,11 @@
     /* border: 2px solid red; */
 }
 .highlight_box{
-    width: 20%;
+    width: 26%;
     /* height: 5vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 6px 0px;
     text-align: center;
     background-color: rgb(185,114,66);
@@ -29,7 +32,7 @@
 }
 .highlight_box a{
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: white;
     text-decoration: none;
 }
