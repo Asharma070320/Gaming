@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./LoginContainer.css";
-import logo from "./logo.png";
+import companyLogo from "./company.png";
 import Footer from "./Footer/Footer";
 
 const LoginContainer = () => {
@@ -17,7 +17,7 @@ const LoginContainer = () => {
   return (
     <div className="front_container">
       <div className="set_something">
-      <img className="companyLogo" src={logo} alt="company_logo" />
+      <img className="companyLogo" src={companyLogo} alt="company_logo" />
       <div className="login_card">
         <p>
           Login <i className="fas fa-hand-point-down"></i>

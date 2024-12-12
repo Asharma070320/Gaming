@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
-import logo from "./logo.png";
+import companyLogo from '../company.png'
 import { FaSearchPlus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -55,7 +55,7 @@ const Navbar = () => {
   return (
     <div className="navbar_container">
       <div className="nav_leftSection">
-        <img className="set_logo" src={logo} alt="company_logo" />
+        <img className="set_logo" src={companyLogo} alt="company_logo" />
       </div>
 
       <div className="nav_rightSection">
